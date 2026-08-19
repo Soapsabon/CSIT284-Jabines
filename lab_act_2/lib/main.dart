@@ -4,8 +4,15 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.indigo,
         body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.indigo,
+                Colors.purpleAccent,
+              ],
+            ),
+          ), // BoxDecoration
           child: Center(
             child: Text("Hello World"),
           ), // Center
